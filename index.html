@@ -4,45 +4,9 @@
   <meta charset="UTF-8">
   <title>Photo Gallery</title>
   <link rel="stylesheet" href="css/bootstrap.css">
-  <style>
-  section {
-    width: 100vw;
-    height: 80vh;
-  }
-
-  section.container {
-    display: inline-block;
-    text-align: center;
-  }
-
-  .cl_white {
-    color: white;
-  }
-
-  img {
-    width: 300px;
-    transition: opacity 1s ease-in-out;
-  }
-
-  img:hover {
-    opacity: .5;
-  }
-
-  .col-text {
-    -webkit-column-count: 3;
-  }
-
-  </style>
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body data-spy="scroll" data-target=".navbar">
-  <nav class="navbar navbar-inverse navbar-fixed-bottom">
-    <ul class="nav navbar-nav">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
   <section id="home" style="background: url(images/header.jpg); background-size: 100% 100%;" class="cl_white text-center">
     <div class="page-header">
       <h1 class="text-center">Jeff's Bootstrap Page</h1>
@@ -88,7 +52,14 @@
     </div>
   </form>
 </section>
-
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+  <ul class="nav navbar-nav">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
 <script src="js/jquery.js"></script>
 <script src=js/bootstrap.js></script>
