@@ -7,8 +7,7 @@
   <style>
   section {
     width: 100vw;
-    height: 100vh;
-    padding: 50px;
+    height: 80vh;
   }
 
   section.container {
@@ -45,23 +44,49 @@
     </ul>
   </nav>
   <section id="home" style="background: url(images/header.jpg); background-size: 100% 100%;" class="cl_white text-center">
-    <h1 class="text-center">My Photo Gallery</h1>
-    <p class="lead"></p>
-    <button class="btn btn-default">Contact</button>
+    <div class="page-header">
+      <h1 class="text-center">Jeff's Bootstrap Page</h1>
+    </div>
+    <button class="btn btn-default"><a href="#contact" style="color: black;">Contact</a></button>
   </section>
 
-  <section class="container">
+  <section id="work" class="container" style="width: 100%;">
     <div class="page-header">
-      <h1 id="work" class="text-center">My Work</h1>
+      <h1 class="text-center">My Work</h1>
     </div>
     <img src="images/image-1.jpg" class="img-thumbnail">
     <img src="images/image-2.jpg" class="img-thumbnail">
     <img src="images/image-3.jpg" class="img-thumbnail">
   </section>
-  <section id="about" class="container">
-    <h1 class="text-center">About</h1>
+
+  <section id="about" class="container" style="width: 100%;">
+    <div class="page-header">
+      <h1 class="text-center">About</h1>
+    </div>
     <div class="col-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, aspernatur, architecto? Aut magni, ratione necessitatibus neque earum voluptatem cupiditate corrupti eius laborum in ad, eligendi, recusandae tempora incidunt maxime voluptatum omnis ipsam voluptatibus nulla voluptates adipisci reiciendis, praesentium ex harum. Optio earum sapiente dicta explicabo eaque excepturi laboriosam quia rerum inventore id sit iste sunt doloribus porro repellat sed dignissimos necessitatibus ipsum delectus, nihil ipsa. Quia quis suscipit optio vero minus aliquid libero autem deleniti! Tempora similique magni, amet qui, porro hic voluptas, sit, totam voluptates nihil repellat. Quis doloribus laudantium neque suscipit vel ipsum quisquam repudiandae aperiam provident excepturi, at tempora ex itaque, dolorum similique delectus, quaerat illum nesciunt explicabo architecto voluptatibus libero dolore accusantium officia. Harum voluptate sequi veritatis animi, vitae omnis ut quaerat facilis iste, reprehenderit repellendus corrupti blanditiis alias perspiciatis dolorem laboriosam ipsam ipsa. Laudantium fuga placeat ad in, nobis adipisci? Labore quod, nostrum maiores quo.</div>
   </div>
+</section>
+<section id="contact" class="container" style="background: grey; width: 100%;">
+  <div class="page-header">
+    <h1 class="text-center">Contact</h1>
+  </div>
+  <form class="col-md-4 col-md-offset-4">
+    <div class="form-group">
+      <input class="form-control" type="text" placeholder="Name">
+    </div>
+    <div class="form-group">
+      <input class="form-control" type="email" placeholder="Email">
+    </div>
+    <div class="form-group">
+      <input class="form-control" type="text" placeholder="Subject">
+    </div>
+    <div class="form-group">
+      <textarea class="form-control" placeholder="Comments"></textarea>
+    </div>
+    <div class="form-group">
+      <input type="submit" class="btn btn-success btn-block">
+    </div>
+  </form>
 </section>
 
 
