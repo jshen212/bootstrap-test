@@ -11,27 +11,61 @@
     padding: 50px;
   }
 
+  section.container {
+    display: inline-block;
+    text-align: center;
+  }
+
   .cl_white {
     color: white;
   }
+
+  img {
+    width: 300px;
+    transition: opacity 1s ease-in-out;
+  }
+
+  img:hover {
+    opacity: .5;
+  }
+
+  .col-text {
+    -webkit-column-count: 3;
+  }
+
   </style>
 </head>
 <body data-spy="scroll" data-target=".navbar">
   <nav class="navbar navbar-inverse navbar-fixed-bottom">
     <ul class="nav navbar-nav">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">What we do</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
   <section id="home" style="background: url(images/header.jpg); background-size: 100% 100%;" class="cl_white text-center">
-    <h1>My Photo Gallery</h1>
+    <h1 class="text-center">My Photo Gallery</h1>
     <p class="lead"></p>
     <button class="btn btn-default">Contact</button>
   </section>
 
-  <script src="js/jquery.js"></script>
-  <script src=js/bootstrap.js></script>
+  <section class="container">
+    <div class="page-header">
+      <h1 id="work" class="text-center">My Work</h1>
+    </div>
+    <img src="images/image-1.jpg" class="img-thumbnail">
+    <img src="images/image-2.jpg" class="img-thumbnail">
+    <img src="images/image-3.jpg" class="img-thumbnail">
+  </section>
+  <section id="about" class="container">
+    <h1 class="text-center">About</h1>
+    <div class="col-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, aspernatur, architecto? Aut magni, ratione necessitatibus neque earum voluptatem cupiditate corrupti eius laborum in ad, eligendi, recusandae tempora incidunt maxime voluptatum omnis ipsam voluptatibus nulla voluptates adipisci reiciendis, praesentium ex harum. Optio earum sapiente dicta explicabo eaque excepturi laboriosam quia rerum inventore id sit iste sunt doloribus porro repellat sed dignissimos necessitatibus ipsum delectus, nihil ipsa. Quia quis suscipit optio vero minus aliquid libero autem deleniti! Tempora similique magni, amet qui, porro hic voluptas, sit, totam voluptates nihil repellat. Quis doloribus laudantium neque suscipit vel ipsum quisquam repudiandae aperiam provident excepturi, at tempora ex itaque, dolorum similique delectus, quaerat illum nesciunt explicabo architecto voluptatibus libero dolore accusantium officia. Harum voluptate sequi veritatis animi, vitae omnis ut quaerat facilis iste, reprehenderit repellendus corrupti blanditiis alias perspiciatis dolorem laboriosam ipsam ipsa. Laudantium fuga placeat ad in, nobis adipisci? Labore quod, nostrum maiores quo.</div>
+  </div>
+</section>
+
+
+<script src="js/jquery.js"></script>
+<script src=js/bootstrap.js></script>
 </body>
 </html>
